@@ -23,6 +23,7 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
+      alert("Yummy! Thanks for the add!")
   
       var newBurger = {
         burger_name: $("#bu").val().trim(),
@@ -44,6 +45,7 @@ $(function() {
 
     $(".delKitty").on("click", function(event) {
       console.log("here")
+      alert("Sorry you don't like me")
       var id = $(this).data("id"); 
   
         // Send the PUT request.
