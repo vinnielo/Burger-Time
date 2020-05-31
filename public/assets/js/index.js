@@ -1,9 +1,9 @@
 $(function() {
     $(".change-devour").on("click", function(event) {
-      const id = $(this).data("id");
-      const newDevour = $(this).data("newDevour");
-  
-      const newDevourState = {
+      var id = $(this).data("id");
+      var newDevour = $(this).data("newdevour");
+  console.log(newDevour)
+     var newDevourState = {
         devoured: newDevour
       };
   
@@ -24,9 +24,9 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      const newBurger = {
-        burger_name: $("#ca").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
+      var newBurger = {
+        burger_name: $("#bu").val().trim(),
+        devoured: $("[name=eat]:checked").val().trim()
       };
   
       // Send the POST request.
@@ -42,4 +42,20 @@ $(function() {
       );
     });
 
-});
+    $(".delKitty").on("click", function(event) {
+      console.log("here")
+      var id = $(this).data("id"); 
+  
+        // Send the PUT request.
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE"
+      }).then(
+        function() {
+          console.log("Deleted Burger");
+          // Reload the page to get the updated list
+          location.reload();
+        }
+      );
+    })
+  
+  });

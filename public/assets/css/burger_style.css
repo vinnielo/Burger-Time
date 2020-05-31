@@ -1,0 +1,40 @@
+.container1,
+.container2 {
+  text-align: center;
+}
+
+.jumbotron{
+    background-color: yellow !important;
+
+}
+
+
+
+.display-4,
+h2,
+h3
+{
+  font-family: "Shrikhand", cursive;
+  color: red;
+}
+
+ul {
+  font-family: "Bangers", cursive;
+  
+}
+
+.add,
+.name,
+.bName{
+    font-family: "Shrikhand", cursive;
+
+}
+
+
+
+footer{
+ text-align: center;
+ background-color: yellow;
+ color: red;
+ font-family: "Shrikhand", cursive;
+}
