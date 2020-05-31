@@ -3,6 +3,12 @@ $(function() {
       var id = $(this).data("id");
       var newDevour = $(this).data("newdevour");
   console.log(newDevour)
+
+  if(newDevour === true){
+    alert("What! I'm Not good enough for you?")
+  }else{
+    alert("NOM...NOM...NOM")
+  }
      var newDevourState = {
         devoured: newDevour
       };
@@ -14,6 +20,7 @@ $(function() {
       }).then(
         function() {
           console.log("changed devoured to", newDevour);
+          
           // Reload the page to get the updated list
           location.reload();
         }
