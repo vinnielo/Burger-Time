@@ -5,7 +5,7 @@ $(function() {
   console.log(newDevour)
 
   if(newDevour === true){
-    alert("What! I'm Not good enough for you?")
+    alert("What! I'm not good enough for you?")
   }else{
     alert("NOM...NOM...NOM")
   }
