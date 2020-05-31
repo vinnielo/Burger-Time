@@ -5,10 +5,11 @@
 
 .jumbotron{
     background-color: yellow !important;
-
+    background-image: url(../img/burger-512.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
 }
-
-
 
 
 img{
@@ -34,12 +35,23 @@ button{
   border-radius: 12px;
 }
 
-.display-4,
+
 h2,
 h3
 {
   font-family: "Shrikhand", cursive;
   color: red;
+  text-shadow: 2px 2px black;
+}
+
+.display-4{
+  text-shadow: 3px 3px black;
+  font-family: "Shrikhand", cursive;
+  color: red; 
+}
+
+.form-group{
+  font-family: "Bangers", cursive;
 }
 
 ul {
@@ -64,67 +76,78 @@ footer{
 }
 
 /* iPad */
-/* @media only screen 
+@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    h1 {
-        font-size: 50px;
-        width: 100%;
+    .display-4{
+      font-size: 38px !important;
+
     }
-    
+    .jumbotron {
+      background-image: url(../img/burger-512.png);
+      background-size: 175px;
+      background-color: yellow !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
 
 }
 
 /* iPhone 6-X Responsiveness */
-/* @media only screen 
+@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 768px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-    h1 {
-        font-size: 40px;
-        width: 100%;
+    .display-4{
+      font-size: 38px !important;
+
     }
-    .lead {
-        font-size: 20px;
-        width: 100%;
-    }
-    footer {
-        bottom: 0;
-        width: 100%;
-        position: fixed;
-    }
-    .tag {
-        font-size: 10px;
-    }
-    #restandmoves {
-        margin-bottom: 70px;
-    }
+    .jumbotron {
+      background-image: url(../img/burger-512.png);
+      background-size: 175px;
+      background-color: yellow !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 
 }
 
 /* iPhone 5 Responsiveness */
-/* @media only screen 
+@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 375px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    h1 {
-        font-size: 40px;
-        width: 100%;
+    .display-4{
+      font-size: 38px !important;
+
     }
-    .lead {
-        font-size: 20px;
-        width: 100%;
-    }
-    footer {
-        bottom: 0;
-        width: 100%;
-    }
-    .tag {
-        font-size: 10px;
-    }
-    .media div img {
-        width: 100%;
-    }
-}  */
+    .jumbotron {
+      background-image: url(../img/burger-512.png);
+      background-size: 175px;
+      background-color: yellow !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+  .left,
+  .right {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+
 
